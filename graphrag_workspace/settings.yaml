@@ -3,7 +3,7 @@ completion_models:
     model_provider: azure
     model: gpt-4.1
     azure_deployment_name: gpt-4.1
-    api_base: https://uhgsphere-aif1.openai.azure.com
+    api_base: https://<your-workspace>.openai.azure.com
     api_version: 2024-12-01-preview
     auth_method: api_key
     api_key: ${GRAPHRAG_API_KEY}
@@ -15,26 +15,12 @@ completion_models:
       max_retries: 3
     request_timeout: 120
 
-# completion_models:
-#   default_completion_model:
-#     model_provider: openai
-#     model: gemini-2.0-flash
-#     api_base: https://generativelanguage.googleapis.com/v1beta/openai/
-#     api_key: ${GRAPHRAG_API_KEY}
-#     concurrent_requests: 3
-#     tokens_per_minute: 60000
-#     requests_per_minute: 15
-#     retry:
-#       type: exponential_backoff
-#       max_retries: 3
-#     request_timeout: 120
-
 embedding_models:
   default_embedding_model:
     model_provider: azure
     model: text-embedding-3-small
     azure_deployment_name: text-embedding-3-small
-    api_base: https://uhgsphere-aif1.openai.azure.com
+    api_base: https://<your-workspace>.openai.azure.com
     api_version: 2024-12-01-preview
     auth_method: api_key
     api_key: ${GRAPHRAG_API_KEY}
