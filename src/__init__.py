@@ -1,0 +1,1 @@
+"""Synthea FHIR R4 to Microsoft GraphRAG conversion package."""
