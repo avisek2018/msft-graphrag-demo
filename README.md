@@ -703,59 +703,26 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🙏 Acknowledgments
 
-- **Microsoft GraphRAG** team for the knowledge graph framework
-- **Synthea** project for synthetic healthcare data
-- **HL7** for FHIR standards
-- Contributors and community feedback
 
----
-
-## 📞 Support
-
-- 📧 Create an issue for bugs or feature requests
-- 💬 Discussions for questions and ideas
-- 📚 Check existing issues before opening new ones
-
----
-
-## 🎯 Roadmap
-
-- [ ] Support for Azure Cognitive Services embedding models
-- [ ] GraphDB backend option (Neo4j integration)
-- [ ] REST API with authentication
-- [ ] Batch query processing
-- [ ] Real-time streaming updates
-- [ ] Mobile app companion
-- [ ] Multi-patient cohort analysis
-
----
-
-**Made with ❤️ for healthcare AI innovation**
-python -m venv msftgrag
-source msftgrag/bin/activate
 ```
-
-Windows PowerShell:
-
-```powershell
+# Windows PowerShell:
 python -m venv msftgrag
 msftgrag\Scripts\Activate.ps1
 ```
 
-### 3. Install dependencies
+### Install dependencies
 
-```bash
+```
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-### 4. Place the Synthea dataset
+### Place the Synthea dataset
 
 Unzip your Synthea FHIR R4 archive and copy this JSON bundles into:
 
-```text
+```
 data/raw/
 ```
 
@@ -988,6 +955,3 @@ Ensure your virtual environment is activated and dependencies are installed.
 
 ---
 
-## License
-
-This demo project is provided for educational use. Synthea data is released free of cost and privacy restrictions by The MITRE Corporation. Microsoft GraphRAG is licensed under the MIT License.
